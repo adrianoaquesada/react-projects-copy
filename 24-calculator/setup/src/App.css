@@ -1,0 +1,117 @@
+.root{
+   --primary: red;
+   --secondary: purple; 
+   --dark: black;
+   --light: white;
+}
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family:'Fira sans', sans-serif;
+}
+
+
+body{
+  background-color: var(--light);
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+
+}
+
+
+
+.calculator{
+  width:100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px rgba(0 ,  0, 0 , .3);
+}
+
+.display{
+  padding: 16px;
+  text-align: right;
+  background-color: rgb(180, 176, 176);
+  color: black;
+  font-size: 25px;
+  font-weight: 300;
+  width: 100%;
+
+}
+.dispaly span{
+  font-size: 14px;
+  color: #fdf6f6;
+  
+
+}
+
+button{
+    appearance: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
+
+button:hover{
+  opacity: 0.9;
+  padding-top: 15px;
+  
+  
+}
+
+.operators {
+  display: flex;
+
+}
+
+.operators button{
+  flex: 1 1 0%;
+  background-color: rgb(103, 116, 106);
+  font-weight: 700;
+}
+
+.digits{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.digits button{
+  flex: 1 1 33.333%;
+  max-width: 1 1 33.333%;
+  background-color: rgb(26, 20, 20);
+
+}
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
